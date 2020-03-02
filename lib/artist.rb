@@ -11,6 +11,7 @@ class Artist
   def songs
     Song.all.do |song|
     song.artist == self
+    @songs << self 
   end
 
   def self.all
