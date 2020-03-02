@@ -9,9 +9,9 @@ class Artist
   end
 
   def songs
-    Song.all.do |song|
+    Song.all |song|
     song.artist == self
-    @songs << self 
+    @songs << self
   end
 
   def self.all
