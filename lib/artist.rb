@@ -9,7 +9,6 @@ class Artist
   end
 
   def songs
-    song.artist == self
     @songs << self
   end
 
